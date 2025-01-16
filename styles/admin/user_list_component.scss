@@ -1,0 +1,14 @@
+.users_list-container {
+width: 70%;
+   h2 {
+     font-size: 24px;
+     margin-top: 1rem;
+     margin-bottom: 5px;
+   }
+}
+
+.users_list-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

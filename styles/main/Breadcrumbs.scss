@@ -1,0 +1,21 @@
+@use '../variables.scss';
+
+.breadcrumbs {
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+     button {
+        display: flex;
+        gap:10px;
+        color:  variables.$primary-color;
+        a {
+            &:hover {
+                color:  variables.$message;
+            }
+        }
+       
+     }
+}

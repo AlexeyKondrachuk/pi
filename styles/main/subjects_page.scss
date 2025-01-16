@@ -1,0 +1,54 @@
+@use '../variables.scss';
+
+.subjects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+
+    .subjucts-title_wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 10px;
+     border-bottom: 2px solid variables.$third-color;
+
+     .subjects-title {
+        font-size: 3rem;
+        color: variables.$text-color;
+      }
+    }
+    .btn-subjects-container {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        width: 95vw;
+        min-height: 10vw;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        .subjects-btn {
+            min-width: 10rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            border: 2px solid variables.$third-color;
+            font-size: 1.7rem;
+         &:nth-child(2) {
+            padding-left: 4rem;
+            padding-right: 4rem;
+         }
+         &:hover {
+            background-color: variables.$third-color;
+            box-shadow: 0px 10px 13px -7px #000000, 1px 4px 18px 7px rgba(0,0,0,0);
+         }
+        }
+      }
+ }

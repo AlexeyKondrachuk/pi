@@ -1,0 +1,45 @@
+.example-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+  position: relative;
+  align-items: center;
+  width: 90vw;
+  border-radius: 10px;
+  border: 2px solid #bfac9b;
+  margin-top: 2rem;
+  padding: 1rem;
+  padding-bottom: 3rem;
+  box-shadow: 7px 9px 17px #000, 1px 4px 18px 7px #0000;
+   .example-header {
+    display: flex; 
+       gap:1rem;
+       align-items: center;
+       h2 {
+        font-size: 2rem;
+       }
+   }
+   .line {
+    display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 60vw;
+    height: 1px;
+    background-color: #343a40;
+   }
+}
+
+.slider-container {
+    display: flex;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-around;
+    background-color: #fff;
+    border-radius: 8px;
+
+}

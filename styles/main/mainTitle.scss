@@ -1,0 +1,63 @@
+@use '../variables.scss';
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 50vh;
+    background-color: variables.$primary-color;
+    background-image: url('../../assets/bg_main_slider.jpg'); 
+    background-size: contain;
+    .logo-wrapper {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        justify-content: center;
+    h1 {
+        
+        min-width: 40vw;
+        font-size: 2.6rem;
+        text-align: center;
+       color: variables.$background-color;
+       span {
+        font-size: 3rem;
+        color: variables.$third-color;
+        text-align: center;
+       }
+    }
+}
+.btn_title-wrapper {
+    display: flex;
+    gap:1rem;
+
+    button {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        color: variables.$background-color;
+        border: 2px solid variables.$background-color;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        font-size: 1.3rem;;
+        &:hover {
+            background-color: variables.$background-color;
+            color: variables.$text-color;
+            svg {
+           
+                path {
+              
+                    stroke: variables.$text-color;
+                }
+            }
+        }
+    }
+}
+
+}

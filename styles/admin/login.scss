@@ -1,0 +1,63 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    background-color: #dedede;
+    h2 {
+        color:#5f5d5d;
+        margin-bottom: 40px;
+        padding: 1.1rem;
+        border-radius: 8px;
+        font-size: 24px;
+        background-color: #f4f4f4;
+        box-shadow: 
+        0 4px 6px rgba(0, 0, 0, 0.3),  /* Основная тень */
+        0 1px 3px rgba(0, 0, 0, 0.2);
+        margin-bottom: 10px;
+    }
+}
+
+.form_login_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 0.9em;
+    max-width: 320px;
+    max-height: 320px;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.3),  /* Основная тень */
+    0 1px 3px rgba(0, 0, 0, 0.2);
+    
+}
+
+.input_admin_panel {
+    min-width: 250px;
+    height: 50px; 
+    padding-left: 1rem;
+    border-radius: 6px;
+}
+
+.btn_login {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    height: 50px;
+    background-color: #b7c4cb;
+    border-radius: 20px;
+   
+    &:hover {
+        background-color: #f4f4f4;
+        border: 2px solid #b7c4cb;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+
+}

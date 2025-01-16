@@ -1,0 +1,84 @@
+.user-container {
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #c3c3c3;
+    padding: 1rem;
+    gap: 1rem;
+    height: 65px;
+    &:hover {
+        background-color: #e6f3d7;
+    }
+}
+
+
+
+.user-status.active {
+    background-color: #d0fd99;
+}
+
+.user-status.blocked {
+    background-color: #dd0f0f;
+}
+
+.user-update-status {
+    button {
+    
+        .lock {
+            &:hover {
+                width: 40px;
+                height: 40px;
+            } 
+          
+           path {
+            fill: #de8787;
+           }
+        }
+        .unlock {
+            &:hover {
+                width: 40px;
+                height: 40px;
+            }
+          
+            path {
+                fill: #2c4e04;
+               }
+        }
+    }
+}
+
+.user-update  {
+  button {
+    .edit {
+        &:hover {
+            width: 40px;
+            height: 40px;
+        } 
+    }
+  }
+}
+
+.user-delete  {
+    button {
+      .delete {
+          &:hover {
+              width: 40px;
+              height: 40px;
+          } 
+      }
+    }
+  }
+
+.tooltip {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    z-index: 15;
+    white-space: nowrap;
+  }

@@ -1,0 +1,86 @@
+@use '../variables.scss';
+
+.about_us-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 90vw;
+    border-radius: 10px;
+    border: 2px solid variables.$third-color;
+    margin-top: 2rem;
+   
+    padding: 1rem;
+    padding-bottom: 3rem;
+    box-shadow: 7px 9px 17px #000, 1px 4px 18px 7px #0000;
+
+
+    .line {
+
+        display: flex;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 60vw;
+        height: 1px;
+        background-color: variables.$text-color;
+    }
+     
+    .about_us-header {
+       display: flex; 
+       gap:1rem;
+       align-items: center;
+       h2 {
+        font-size: 2rem;
+       }
+    } 
+
+    .about_us-title {
+
+        color:  variables.$text-color;
+        font-size: 1.4rem;
+    }
+
+    .btn-container {
+
+        display: flex;
+        position: absolute;
+        margin-left: auto;
+        height: 50px;
+        gap: 3px;
+        bottom: -4px;
+        right: -2px;
+        border-radius: 10px;
+        align-items: center;
+        span {
+            font-size: 1.4rem;
+            color: variables.$message;
+        }
+        button {
+            padding-left: 5px;
+            padding-top: 4px;
+          width: 55px;
+          height: 45px;
+          border-bottom-right-radius: 10px;
+          border-top-left-radius: 10px;
+          color: variables.$primary-color;
+          background-color: variables.$message;
+          font-size: 1.7rem;
+          
+          &:hover {
+            color: #fff;
+          
+             box-shadow: 13px 13px 10px #fff;
+             background-color: variables.$secondary-color;
+          }
+
+          &:active {
+            color: #fff;
+          
+             box-shadow: 13px 13px 10px #fff;
+             background-color: variables.$secondary-color;
+          }
+        }
+    }
+   
+}
