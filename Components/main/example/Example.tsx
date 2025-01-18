@@ -1,9 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../../../styles/main/example.scss'
 import FullScreenSlider from './FullScreenSlider'
 import { imagePhysics, imagesMath } from './dataFiles'
 
 export const Example = () => {
+
+  const [slider1State, setSlider1State] = useState({ currentIndex: 0, 
+    
+  });
+  const [slider2State, setSlider2State] = useState({ currentIndex: 0, 
+    
+  });
+
+const slider1 = '1'
+const slider2 = '2'
+
+const handleSlideChange = (sliderId: string, newIndex: number) => {
+  if (sliderId === '1') {
+    setSlider1State({
+      currentIndex: newIndex,
+     
+      
+    });
+  } else if (sliderId === '2') {
+    setSlider2State({
+      currentIndex: newIndex,
+    
+      
+
+    });
+  }
+};
+
   return (
     <div className='example-container'>
 
@@ -50,9 +78,21 @@ d="M9.625,16.875h5.5c0.276,0,0.5-0.224,0.5-0.5v-5.5c0-0.276-0.224-0.5-0.5-0.5h-5
    
 
  
-      <FullScreenSlider images={imagesMath} />
+      <FullScreenSlider 
+      currentIndex={slider1State.currentIndex}
+      onSlideChange={handleSlideChange}
+      images={imagesMath} 
+      sliderId={slider1}
+      
+      />
 
-      <FullScreenSlider images={imagePhysics} />
+      <FullScreenSlider
+      currentIndex={slider2State.currentIndex}
+      onSlideChange={handleSlideChange}
+       images={imagePhysics} 
+       sliderId={slider2}
+       
+       />
     </div>
     <span className='line'></span>
 

@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+   align-items: center;
    width: 100%;
    margin-top: 2rem;
    margin-bottom: 2rem;
@@ -12,6 +12,7 @@
   border-radius: 10px;
   border: 2px solid #bfac9b;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   padding: 1rem;
   padding-bottom: 3rem;
   box-shadow: 7px 9px 17px #000, 1px 4px 18px 7px #0000;
@@ -41,5 +42,6 @@
     justify-content: space-around;
     background-color: #fff;
     border-radius: 8px;
-
+    margin-bottom: 2rem;
+    margin-top: 2rem;
 }

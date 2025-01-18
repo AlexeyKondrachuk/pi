@@ -1,3 +1,4 @@
+@use '../../../styles/variables';
 
 .slider-container {
   width: 300px;
@@ -13,6 +14,9 @@
     position: relative;
   }
 }
+.swiper-zoom-container {
+  height: 90vh !important;
+}
 
 .fullscreen {
   position: fixed;
@@ -25,22 +29,66 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  .swiper-button-next-1, 
+  .swiper-button-prev-1,
+  .swiper-button-next-2, 
+  .swiper-button-prev-2
+   {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    
+    z-index: 10;
+    transform: translateY(-50%);
+    transition: right 0.3s ease, left 0.3s ease, transform 0.3s ease;
+  }
+  .swiper-button-next-1,
+  .swiper-button-next-2
+  {
+    right: 3vw;
+  }
+
+  .swiper-button-prev-1,
+  .swiper-button-prev-2
+  {
+    left: 3vw;
+  }
+ 
+  .expand-button, .close-button {
+    z-index: 20;
+  }
+
 }
 
 .expand-button {
   position: absolute;
+  display: flex;
+  gap: 10px;
   top: -25px;
   right: -10px;
-  color: white;
+  color: variables.$text-color;
+  justify-content: center;
+  align-items: center;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
   z-index: 10;
-
-  &:hover {
-  
+     svg {
+      path {
+        fill: variables.$text-color;
+      }
+     }
+  &:hover, &:active {
+    color: variables.$message;
+    svg {
+      path {
+        fill: variables.$message;
+      }
+     }
   }
 }
 
@@ -48,8 +96,8 @@
   position: fixed;
   top: 20px;
   right: 20px;
-  background: #fff;
-  color: #000;
+  background: variables.$message;
+  color: variables.$background-color;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -58,6 +106,40 @@
   z-index: 10;
 
   &:hover {
-    background: #ddd;
+    color: variables.$message;
+    background: variables.$background-color;
   }
 }
+
+
+.swiper-button-next-1, 
+.swiper-button-prev-1,
+.swiper-button-next-2, 
+.swiper-button-prev-2
+ {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  transform: translateY(-50%);
+  transition: right 0.3s ease, left 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+// .swiper-button-prev-1 {
+//   width: 30px;
+//   height: 30px;
+//   background-color: aqua;
+// }
+
+// .swiper-button-prev-2 {
+//   width: 30px;
+//   height: 30px;
+//   background-color: rgb(18, 121, 31);
+// }
+
+
+
+
+

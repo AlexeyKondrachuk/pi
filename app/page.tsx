@@ -12,13 +12,13 @@ import { Example } from '@/Components/main/example/Example';
 export default function Home() {
 
   return (
-   <section className="homepage-container">
+   <main className="homepage-container">
     <MainTitle />
  
    
     <Aboutus />
     <Example />
-    <Footer />
-   </section>
+  
+   </main>
   );
 }

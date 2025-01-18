@@ -4,6 +4,7 @@ import "./globals.css";
 import { Providers } from "./Providers"; // Импортируем обёртку
 import { MainHeader } from "@/Components/main/MainHeader";
 import Breadcrumbs from "@/Components/Breadcrumbs/Breadcrumbs";
+import { Footer } from "@/Components/footer/footer";
 
 
 
@@ -38,6 +39,7 @@ export default function RootLayout({
      
     
               {children}
+              <Footer />
         </Providers>
       
         
